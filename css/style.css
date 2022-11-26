@@ -916,8 +916,6 @@ h1,h2,h3,h4,h5,h6,p {
 
     line-height: 1.71;
     letter-spacing: 0.03em;
-
-    transition: background-color var(--transition-time) var(--transition-cubic);
 }
 
 .icon-check {
@@ -935,6 +933,9 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 2px;
     margin-right: 8px;
     fill: transparent;
+
+    transition: background-color var(--transition-time) var(--transition-cubic),
+    fill var(--transition-time) var(--transition-cubic);
 }
 
 .modal-check:checked+.checkbox-text span {
