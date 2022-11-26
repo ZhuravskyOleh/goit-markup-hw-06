@@ -906,10 +906,6 @@ h1,h2,h3,h4,h5,h6,p {
     cursor: pointer;
 }
 
-.modal-check:checked + .checkbox-text span{
-    background-color: #188CE8;
-    border: none;
-}
 
 
 
@@ -939,6 +935,11 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 2px;
     margin-right: 8px;
     fill: transparent;
+}
+
+.modal-check:checked+.checkbox-text span {
+    background-color: #188CE8;
+    border: none;
 }
 
 /* .checkbox-text::before {
