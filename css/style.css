@@ -920,6 +920,8 @@ h1,h2,h3,h4,h5,h6,p {
 
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    transition: background-color var(--transition-time) var(--transition-cubic);
 }
 
 .icon-check {
