@@ -448,9 +448,17 @@
           </ul>
         </div>
         <div class="form-wrapper">
-          <h2 class="form-header">Підпишіться на розсилку</h2>
+          <label for="footer-mail" class="form-header"
+            >Підпишіться на розсилку</label
+          >
           <form action="" class="footer-form">
-            <input type="email" placeholder="E-mail" class="footer-input" />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="footer-input"
+              id="footer-mail"
+            />
             <button type="submit" class="btn footer-btn">
               Підписатися
               <svg width="24" height="24" class="send-icon">
@@ -527,7 +535,12 @@
             ></textarea>
           </div>
           <div class="checkbox-wrap">
-            <input type="checkbox" name="polisy" id="checkbox" class="modal-check visually-hidden" />
+            <input
+              type="checkbox"
+              name="polisy"
+              id="checkbox"
+              class="modal-check visually-hidden"
+            />
             <label for="checkbox" class="checkbox-text">
               <span>
                 <svg class="icon-check" width="16" height="15">

@@ -565,7 +565,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* ----------footer-form--------- */
 
+.form-wrapper {}
+
 .form-header {
+    display: block;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -583,9 +586,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .footer-input {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
+    padding: 15px 16px;
     width: 385px;
 
     font-size: 16px;
@@ -841,14 +842,14 @@ h1,h2,h3,h4,h5,h6,p {
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 42px;
+    padding-right: 12px;
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
     cursor: pointer;
 
-    transition: outline var(--transition-time) var(--transition-cubic),
-    fill var(--transition-time) var(--transition-cubic);
+    transition: outline var(--transition-time) var(--transition-cubic);
 }
 
 .coment-box {
@@ -889,6 +890,7 @@ h1,h2,h3,h4,h5,h6,p {
 
     width: 18px;
     height: 18px;
+    transition: fill var(--transition-time) var(--transition-cubic);
 }
 
 .modal-check {
@@ -935,12 +937,12 @@ h1,h2,h3,h4,h5,h6,p {
     fill: transparent;
 
     transition: background-color var(--transition-time) var(--transition-cubic),
-    fill var(--transition-time) var(--transition-cubic);
+    border var(--transition-time) var(--transition-cubic);
 }
 
 .modal-check:checked+.checkbox-text span {
     background-color: var(--accent-color);
-    border: none;
+    border: 1px solid var(--accent-color); 
 }
 
 /* .checkbox-text::before {
@@ -953,6 +955,7 @@ h1,h2,h3,h4,h5,h6,p {
 } */
 
 .checkbox-link {
+    margin-left: 3px;
     color: var(--accent-color);
     text-underline-offset: 2px;
 }
